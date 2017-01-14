@@ -11,7 +11,9 @@
  * Please attribute and keep this license.
  * 
  * This example sends ASCII arrow key characters over USB when the left
- * joystick is moved or a space character when right trigger button is pressed.
+ * joystick is moved or keyboard presses when trigger or right buttonpad buttons are pressed.
+ * Shoulder buttons act as 'Start' and 'Select' buttons similar to a NES gamepad.
+ * Left joystick acts as a D-pad while right joystick buttons act as A,B,X,Y buttons.
  */
 
 #include "Keyboard.h"
@@ -21,9 +23,10 @@
 #define R_TRIGGER     3
 #define L_TRIGGER     6
 #define A_BUTTON      9
-#define B_BUTTON      2
+#define B_BUTTON      2       //Also used as  the right stick button if analog joystick installed.
 #define X_BUTTON      8
 #define Y_BUTTON      4
+#define L_BUTTON      5       //Left stick button. Unused in this example.
 
 void setup() {
   pinMode(R_TRIGGER, INPUT_PULLUP);
@@ -95,6 +98,3 @@ void loop() {
     Keyboard.release('y');
   }
 }
-                                                             
-
-
