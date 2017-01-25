@@ -33,7 +33,7 @@ void loop() {
     digitalWrite(CS, LOW);
       // shift out the bits:
     SPI.transfer(dec_digits[digitOne]);
-      //take the latch pin high so the LEDs will light up:
+      //take the latch pin (CS) high so the LEDs will light up:
     digitalWrite(CS, HIGH);
       // pause before next value:
     delay(1000);
