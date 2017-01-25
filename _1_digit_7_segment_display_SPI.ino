@@ -1,11 +1,12 @@
 /* This is example code for the SparkFun Large Digit Driver that uses SPI
  * Wiring is as follows:
- * Board-->SPI Bus
- *
+ * Board-->Host
+ *   GND-->GND
  *   LAT-->CS
  *   CLK-->SCK
  *   SER-->MOSI
- *
+ *   +5V-->5V
+ *  +12V-->12V
 */ 
   
 #include <SPI.h>
