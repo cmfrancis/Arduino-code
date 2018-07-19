@@ -2,9 +2,9 @@
  * Wiring is as follows:
  * Board-->Host
  *   GND-->GND
- *   LAT-->CS
- *   CLK-->SCK
- *   SER-->MOSI
+ *   LAT-->CS (Arduino D10)
+ *   CLK-->SCK (Arduino D13)
+ *   SER-->MOSI (Arduino D11)
  *   +5V-->5V
  *  +12V-->12V
 */ 
